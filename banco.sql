@@ -1,4 +1,4 @@
-/*CREATE DATABASE db_produtos;
+CREATE DATABASE db_produtos;
 USE db_produtos;
  
 
@@ -25,4 +25,4 @@ INSERT INTO tbl_produtos (id, titulo, descricao, preco, imagem, tipo) VALUES
     ('11', 'Suco DellVale', 'Lata 290mL', 7.00, 'https://files.menudino.com/cardapios/59084/13.jpg', 'Bebida'),
     ('12', 'Bebida da Casa', '300ml', 5.00, 'https://files.menudino.com/cardapios/59084/14.jpg', 'Bebida');
     
-    SELECT *  FROM tbl_produtos WHERE id = 3;
+    SELECT *  FROM tbl_produtos;

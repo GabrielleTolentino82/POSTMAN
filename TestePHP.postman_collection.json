@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "0167a232-60af-4d3e-b2aa-b4c3c8446225",
+		"name": "TestePHP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34511130"
+	},
+	"item": [
+		{
+			"name": "requestGET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 2,\r\n    \"titulo\" : \"Saladman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/SW-II/Controller/produtos.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SW-II",
+						"Controller",
+						"produtos.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requestPOST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n   \"titulo\": \"Novo Produto\",\r\n    \"descricao\": \"Descrição do Novo Produto\",\r\n    \"preco\": \"Preço do Novo Produto\",\r\n    \"imagem\": \"Imagem do Novo Produto\",\r\n    \"tipo\": \"Hambúrguer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/SW-II/Controller/produtos.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SW-II",
+						"Controller",
+						"produtos.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requestPUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"13\",\r\n        \"titulo\": \"Produto Atualizado\",\r\n        \"descricao\": \"Este produto foi atualizado\",\r\n        \"preco\": \"21.99\",\r\n        \"imagem\": \"https://files.menudino.com/cardapios/59084/10.jpg\",\r\n        \"tipo\": \"Hambúrguer\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/SW-II/Controller/produtos.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SW-II",
+						"Controller",
+						"produtos.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requestPATCH",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requestDELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/SW-II/Controller/produtos.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SW-II",
+						"Controller",
+						"produtos.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
