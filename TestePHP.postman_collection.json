@@ -99,10 +99,28 @@
 		{
 			"name": "requestPATCH",
 			"request": {
-				"method": "GET",
+				"method": "PATCH",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 2,\r\n        \"campo\": \"descricao\",\r\n        \"novoValor\": \"Descrição Atualizada\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": ""
+					"raw": "http://localhost/SW-II/Controller/produtos.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"SW-II",
+						"Controller",
+						"produtos.php"
+					]
 				}
 			},
 			"response": []
