@@ -1,22 +1,7 @@
 <?php 
    $conexao = conectar();
    function editar_produto_parcialmente($conexao, $campo, $novoValor, $id){
-        switch($campo){
-           case 'titulo':
-               $valor = "'$novoValor'";
-            break;
-           case 'descricao':
-               $valor = "'$novoValor'";
-            break;
-            case 'preco':
-               $valor = "'$novoValor'";
-            break;
-            case 'imagem':
-               $valor = "'$novoValor'";
-            break;
-            default:
-                die("Campo não encontrado");
-        }
+        $valor = "'$novoValor'";
         $sql = "UPDATE tbl_produtos SET $campo = $valor WHERE id = $id";
         $res = mysqli_query($conexao, $sql) or die("Erro ao tentar incluir");
         fecharConexao($conexao);
